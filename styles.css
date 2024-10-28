@@ -1,10 +1,149 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
+    font-family: "roboto"sans-serif;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    color: #5eec59;
+    line-height: 1.6;
+}
+
+
+header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #3fff89;
+    color: white;
+    padding-top: 20px;
+}
+
+header nav h1 {
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-bottom: 10px;
+}
+
+header nav ul li a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    background-color: #8de69cde;
+    color: #ff0;
+}
+
+header footer {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 0.9em;
+}
+
+header footer a {
+    color: #ff0;
+    text-decoration: none;
+}
+
+header footer a:hover {
+    text-decoration: underline;
+}
+
+
+main, section {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+h1, h2 {
+    color: #3fff89;
+}
+
+h2 {
+    margin-top: 40px;
+}
+
+
+p, span, a, ul, ol, code, pre {
+    font-family: Arial, sans-serif;
+}
+
+code {
+    background-color: #c7a9a9;
+    padding: 2px 4px;
+    border-radius: 4px;
+    color: #83ff89;
+}
+
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+ul, ol {
+    margin: 0;
+    padding: 0 0 0 20px;
+}
+
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    text-align: center;
+    color: #46ca78;
+}
+
+
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #fff;
+}
 
 
 
