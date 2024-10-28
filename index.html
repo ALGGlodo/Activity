@@ -3,22 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>PRIN-135 HTML Cheatsheet</title>
+
 </head>
 <body>
+    <header class="sticky">
     <nav>
-    <h1>PRIN-135 HTML Cheatsheet</h1>
+    <h1></h1>PRIN-135 HTML Cheatsheet</h1>
     <ul>
-        <li><a href="headers">HTML Headers</a></li>
-        <li><a href="typography">HTML Typography</a></li>
-        <li><a href="formatting">HTML Formatting</a></li>
-        <li><a href="">HTML Media</a></li>
-        <li><a href="">HTML Table</a></li>
-        <li><a href="">HTML Forms
-        </a></li>
+        <li class="nav"><a href="#headers">HTML Headers</a></li>
+        <li class="nav"><a href="#typography">HTML Typography</a></li>
+        <li class="nav"><a href="#formatting">HTML Formatting</a></li>
+        <li class="nav"><a href="#media">HTML Media</a></li>
+        <li class="nav"><a href="#table">HTML Table</a></li>
+        <li class="nav"><a href="#forms">HTML Forms</a></li>
     </ul>
+</header>
+
 <section id="headers">
-    <h2>HTML Headers <a href="">(top)</a></h2>
+    <h2>HTML Headers <a href="Headers"></a></h2>
     <table border="1">
     <thead>
         <tr>
@@ -31,7 +38,7 @@
         <tr>
             <td>Heading 1</td>
             <td><code>&lt;h1&gt;Heading 1&lt;/h1&gt;</code></td>
-            <td><h1>Heading 1</h1></td>
+            <td><h1>Heading 1</h1>/</td>
         </tr>
         <tr>
             <td>Heading 2</td>
@@ -55,7 +62,7 @@
         </tr>
         <tr>
             <td>Heading 6</td>
-            <td><code>&lt;h6&gt;Heading 6&lt;/h6&gt;</code></td>/td>
+            <td><code>&lt;h6&gt;Heading 6&lt;/h6&gt;</code></td>
             <td><h6>Heading 6</h6></td>
         </tr>
              </tbody>
@@ -63,7 +70,7 @@
     </nav>
 </section>
 
-----------------------------------------------------------------------
+
 
 <section id="typography">
 
@@ -199,9 +206,9 @@ and break lines.
     </table>
 </section>
 
-----------------------------------------------------------------------
+
 <section id="formatting">
-<h2>HTML Formatting<a href="top">Top</a></h2>
+<h2>HTML Formatting<a href="formatting">Top</a></h2>
 <table border="1">
 <thead>
     <tr>
@@ -266,28 +273,204 @@ and break lines.
     </tr>
 </tbody>
 </section>
-----------------------------------------------------------------------
+
 
 <section id="media">
-    <h2>HTML Media<a href="top">Top</a></h2>
+    <h2 class="table-header">HTML Media </h2>
     <table border="1">
-    <thead>
+      <thead>
         <tr>
-            <th><strong>Description</strong></th>
-            <th><strong>Markup</strong></th>
-            <th><strong>Output</strong></th> 
+          <th><strong>Description</strong></th>
+          <th><strong>Markup</strong></th>
+          <th><strong>Output</strong></th>
         </tr>
-    </thead>
-<tbody>
-    <tr>
-        <td>Image</td>
-        <td>
-            <code> &lt;img src="source.jpg" alt="alternate text&gt;</code>   
-        </td>
-        <td><img src="https://picsum.photos/320/240" alt="alternate tex"></a></td>
-    </tr>
-</tbody>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Image</td>
+          <td>
+            <code>&lt;img src="source.jpg" alt="alternate text"&gt;</code>
+          </td>
+          <td>
+            <img src=" https://picsum.photos/320/240" alt="alternate text" />
+          </td>
+        </tr>
+        <tr>
+          <td>Video</td>
+          <td>
+            <code
+              >&lt;video width="320" height="240" controls&gt; <br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;source src="source.mp4"
+              type="video/mp4"&gt; <br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;source src="source.ogg"
+              type="video/ogg"&gt; <br />
+              &nbsp;&nbsp;&nbsp;&nbsp;Your browser does not support the audio
+              element. <br />
+              &lt;/video&gt;
+            </code>
+          </td>
+          <td>
+            <video width="320" height="240" controls>
+              <source
+                src=" https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+                type="video/mp4"
+              />
 
+              Your browser does not support the video tag.
+            </video>
+          </td>
+        </tr>
+        <tr>
+          <td>Audio</td>
+          <td>
+            <code
+              >&lt;audio controls&gt; <br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;source src="source.ogg"
+              type="audio/ogg"&gt; <br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;source src="source.ogg"
+              type="audio/mpeg"&gt; <br />
+              &nbsp;&nbsp;&nbsp;&nbsp;Your browser does not support the audio
+              element. <br />
+              &lt;/audio&gt;
+            </code>
+          </td>
+          <td>
+            <audio controls>
+              <source
+                src=" https://content.codecademy.com/courses/Semantic%20HTML/nyc-sounds.mov"
+                type="audio/mpeg"
+              />
+
+              Your browser does not support the video tag.
+            </audio>
+          </td>
+        </tr>
+        <tr>
+          <td>IFrame</td>
+          <td><code>&lt;iframe src="url"&gt;&lt;/iframe&gt;</code></td>
+          <td>
+            <iframe
+              src=" https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGRGfdqqK0&#x2F;a4g7Fq1ZCb-A6DrYhHa-rQ&#x2F;view?embed"
+            ></iframe>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+<section id="forms">
+    <h2>HTML Form Elements <a href="#top">(top)</a></h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Description</th>
+          <th>Markup</th>
+          <th>Output</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Label</p></td>
+          <td>
+            <code>&lt;label for="input-id"&gt;Label:&lt;/lable&gt;</code>
+          </td>
+          <td><label for="input-id">Label:</label></td>
+        </tr>
+        <tr></tr>
+          <td><p>Input - Textbox</p></td>
+          <td>
+            <code>&lt;input type="text" name="name"&gt;</code>
+          </td>
+          <td><input type="text" name="name"></td>
+        </tr>
+        <tr>
+          <td><p>Input - Number</p></td>
+          <td>
+            <code>&lt;input type="number" name="name"&gt;</code>
+          </td>
+          <td><input type="number" name="name"></td>
+        </tr>
+        <tr>
+          <td><p>Input - Password</p></td>
+          <td>
+            <code>&lt;input type="password" name="name"&gt;</code>
+          </td>
+          <td><input type="password" name="name"></td>
+        </tr>
+        <tr>
+          <td><p>Input - Checkbox</p></td>
+          <td>
+            <code>&lt;input type="checkbox" name="name"&gt; Check me</code>
+          </td>
+          <td><input type="checkbox" name="name">Check me</td>
+        </tr>
+        <tr>
+          <td><p>Input - Radio</p></td>
+          <td>
+            <code>
+              <pre>
+
+&lt;input type="radio" name="name"&gt; Option 1 
+&lt;input type="radio" name="name"&gt; Option 2                  
+              </pre>
+            </code>
+          </td>
+          <td>
+            <input type="radio" name="name">Option 1 
+            <input type="radio" name="name">Option 2
+          </td>
+        </tr>
+        <tr>
+<tr>
+          <td><p>Input - Submit</p></td>
+          <td>
+            <code>&lt;input type="submit" value="Submit"&gt;</code>
+          </td>
+          <td><input type="submit" name="Submit"></td>
+        </tr>
+        <tr>
+          <td><p>Input - Button</p></td>
+          <td>
+            <code>&lt;input type="button" value="Check Me"&gt;</code>
+          </td>
+          <td><input type="button" value="Click Me"></td>
+        </tr>
+        <tr>
+          <td><p>Select</p></td>
+          <td>
+            <code>
+              <pre>
+&lt;select name="name"&gt;  
+  &lt;option value="option1"&gt;Option 1&lt;/option1&gt;      
+  &lt;option value="option2"&gt;Option 2&lt;/option2&gt;  
+  &lt;option value="option3"&gt;Option 3&lt;/option3&gt;          
+&lt;/select&gt;                  
+              </pre>
+            </code>
+          </td>
+          <td>
+            <select name="name">  
+              <option value="option1">Option 1</option1>      
+              <option value="option2">Option 2</option2>  
+              <option value="option3">Option 3</option3>          
+            </select>   
+          </td>
+        </tr>
+        <tr>
+          <td><p>Textarea</p></td>
+          <td>
+            <code>&lt;textarea name="name"&gt;Textarea here&lt;/textarea&gt;</code>
+          </td>
+          <td><textarea name="name">Textarea here</textarea></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+<footer>
+    PRIN-135 MIDTERM EXAM
+    <a href="https://github.com/ALGGlodo"></a>ALGGlodo</a>
+</footer>
 
 
 
