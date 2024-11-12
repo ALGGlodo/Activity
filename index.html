@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>PRIN-135 HTML Cheatsheet</title>
 </head>
 <body>
-    <header class="sticky">
+    <header>
+      <div class="container">
+    <div class="sidebar">
         <nav>
             <h1>PRIN-135 HTML Cheatsheet</h1>
             <ul>
@@ -22,8 +22,11 @@
                 <li class="nav"><a href="#forms">HTML Forms</a></li>
             </ul>
         </nav>
+        </div>
+      </div>
     </header>
 
+    <div class="main">
     <section id="headers">
         <h2>HTML Headers</h2>
         <table border="1">
@@ -68,6 +71,7 @@
             </tbody>
         </table>
     </section>
+  </div>
 
     <section id="typography">
         <h2>HTML Typography</h2>
@@ -232,16 +236,16 @@ and break lines.
     </section>
 
     <section id="media">
-        <h2>HTML Media</h2>
-        <table border="1">
-            <thead>
-                <tr>
-                    <th><strong>Description</strong></th>
-                    <th><strong>Markup</strong></th>
-                    <th><strong>Output</strong></th>
-                </tr>
-            </thead>
-            <tbody>
+      <h2>HTML Media</h2>
+      <table>
+          <thead>
+              <tr>
+                  <th>Description</th>
+                  <th>Markup</th>
+                  <th>Output</th>
+              </tr>
+          </thead>
+          <tbody>
                 <tr>
                     <td>Image</td>
                     <td><code>&lt;img src="image.jpg" alt="Description"&gt;</code></td>
@@ -257,10 +261,10 @@ and break lines.
                     <td><code>&lt;video controls&gt;&lt;source src="video.mp4"&gt;&lt;/video&gt;</code></td>
                     <td><video controls><source src="video.mp4" type="video/mp4" /></video></td>
                 </tr>
-                <tr>
+                 <tr>
                   <td>Iframe</td>
-                  <td>&lt;ifram src="url"&gt;&lt;/iframe&gt;</td>
-                  <td><iframe src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGRGfdqqK0&#x2F;a4g7Fq1ZCb-A6DrYhHa-rQ&#x2F;view?embed"></iframe></td>
+                  <td>&lt;iframe src="url"&gt;&lt;/iframe&gt;</td>
+                  <td><iframe src="https://www.canva.com/design/DAGRGfdqqK0/a4g7Fq1ZCb-A6DrYhHa-rQ/view?embed"></iframe></td>
               </tr>
             </tbody>
         </table>
@@ -269,6 +273,7 @@ and break lines.
     <section id="table">
       <h2 id="table">HTML Table</h2>
       <table border="1">
+        <thead>
           <tr>
               <th>Description</th>
               <th>Markup</th>
@@ -293,8 +298,7 @@ and break lines.
       &lt;td&gt;Row 2 Column 2&lt;/td&gt;
   &lt;/tr&gt;  
   &lt;/table&gt;
-            </pre
-              >
+            </pre>
             </code>
           </td>
           <td rowspan="3">
@@ -463,25 +467,11 @@ and break lines.
           </tr>
       </table>
   </div>
-  </body>
-        </table>
-    </section>
+</table>
+</section>
 
-    <section id="forms">
-        <h2>HTML Forms</h2>
-        <form>
-            <label for="fname">First Name:</label><br>
-            <input type="text" id="fname" name="fname"><br><br>
-            <label for="lname">Last Name:</label><br>
-            <input type="text" id="lname" name="lname"><br><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email"><br><br>
-            <input type="submit" value="Submit">
-        </form>
-    </section>
-
-    <footer>
-      <p>&copy;<a href="https://github.com/dashboard">ALGGLODO</a></p>
-  </footer>
 </body>
+<footer>
+  <p>&copy;<a href="https://github.com/dashboard"> PRIN-135 HTML CHEATSHEET ALGGLODO</a></p>
+</footer>
 </html>
