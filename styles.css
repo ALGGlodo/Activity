@@ -84,11 +84,8 @@ main, section {
 }
 
 .sidebar {
-  position: relative;
-  width: 100%;
-  height: auto;
-  overflow-y: scroll;
   max-height: 150px;
+  overflow-y: scroll;
 }
 
 
